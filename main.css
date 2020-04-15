@@ -17,7 +17,16 @@
 body, html {
   height: 100%;
 }
-
+.my-col{
+  border: 3px dotted blue;
+  height:auto;
+}
+@media (max-width: 1200px){
+  .my-col{
+    border: 3px dotted blue;
+    height:20%;
+  }
+}
 .page {
   height: 100%;
   max-width: 100%;
@@ -56,8 +65,14 @@ body, html {
   background-color: #b19cd9;
 }
 .gal-img{
-  width: 80%;
-}
-.gal-img.xl{
   height: 80%;
+  width: auto;
+}
+@media (min-width: 1200px){
+
+.gal-img{
+  width: 80%;
+  height:auto;
+}
+
 }
