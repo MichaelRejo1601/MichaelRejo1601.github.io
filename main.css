@@ -1,0 +1,57 @@
+/*
+.my-container {
+  border: 1px solid green;
+  height: 100%;
+  max-width: 100%;
+}
+
+.my-row {
+    border: 3px solid red;
+    height: 100%;
+}
+
+.my-col {
+  w:border: 3px dotted blue;
+}
+*/
+body, html {
+  height: 100%;
+}
+
+.page {
+  height: 100%;
+  max-width: 100%;
+  scroll-snap-type: y mandatory;
+  -webkit-scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.gal {
+  
+ -webkit-box-shadow: 0px 0px 19px 4px rgba(177,156,217,0.5);
+ box-shadow: 0px 0px 19px 4px rgba(177,156,217,0.5);
+ height: 100%;
+ border-radius: 50px;
+}
+.scroll-child-start{
+  scroll-snap-align: start;
+    -webkit-scroll-snap-align: start;
+}
+.scroll-child {
+  scroll-snap-align: center;
+  -webkit-scroll-snap-align: center;
+}
+
+.h100 {
+  height:100%;
+}
+
+.h95{
+ height:95%;
+}
+.mw100 {
+  max-width: 100%;
+}
+.landing {
+  background-color: #b19cd9;
+}
