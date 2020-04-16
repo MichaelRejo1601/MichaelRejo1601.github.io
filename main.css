@@ -37,7 +37,8 @@ body, html {
 .page {
   height: 100%;
   max-width: 100%;
-  scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
   -webkit-scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
@@ -48,6 +49,8 @@ body, html {
  box-shadow: 0px 10px 19px 4px rgba(177,156,217,0.5);
  height: 100%;
  border-radius: 50px;
+ -webkit-transition: background-color 0.5s;
+ -o-transition: background-color 0.5s;
  transition: background-color 0.5s;
  margin-bottom: auto;
 }
