@@ -6,12 +6,35 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css"/>
     <script src="main.js"></script>
+    <script>
+    function openNav() {
+      if (document.getElementById("myNav").style.height == '0%'){document.getElementById("myNav").style.height = '100%';}
+      else if (document.getElementById("myNav").style.height == '100%'){document.getElementById("myNav").style.height = '0%';}
+    }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Welcome to Michael's Portfolio</title>
   </head>
   <body>
+
     <div class='page'>
-      <div class='container my-container scroll-child-start h100 mw100 landing'>
+
+      <div id="myNav" class="overlay" style="height:0%">
+
+        <div class="overlay-content">
+          <a href="#">About Me</a>
+          <a href="#">Resume</a>
+          <a href="#">Projects</a>
+          <a href="#">Experiences</a>
+          <a href="#">Contact Me</a>
+        </div>
+
+      </div>
+      <span href="javascript:void(0)" class="closebtn" onclick="openNav()">
+        &times;
+      </span>
+
+      <div class='container my-container scroll-child-start h100 mw100' id='landing'>
         <div class='row my-row h100'>
           <div class='col-xl-12'>
 
@@ -24,7 +47,7 @@
       <div class='container my-container scroll-child h95 mw100'>
           <div class='row my-row h100'>
             <div class='col-xl-3 my-col mt-4 mt-xl-0'>
-              <div  href='#landing' class='gal'>
+              <a href='#landing' style="text-decoration : none; color : #000000;"><div class='gal'>
                 <div class='row'>
                   <div class='col-xl-12 col-6 text-center p-4'>
                     <h1 class='d-none d-xl-block'>Managing Large Project with Github</h1>
@@ -37,10 +60,10 @@
                     <img class='img-fluid gal-img' src='src\images\terminal.svg' />
                   </div>
                 </div>
-              </div>
+              </div></a>
             </div>
             <div class='col-xl-3 my-col mt-4 mt-xl-0'>
-              <div  href='#landing' class='gal'>
+              <a href='#landing' style="text-decoration : none; color : #000000;"><div class='gal'>
                 <div class='row'>
                   <div class='col-xl-12 col-6 text-center p-4'>
                     <h1>Magpie Chatbot</h1>
@@ -52,10 +75,10 @@
                     <img class='img-fluid gal-img' src='src\images\terminal.svg' />
                   </div>
                 </div>
-              </div>
+              </div></a>
             </div>
-            <div href='#landing' class='col-xl-3 my-col mt-4 mt-xl-0'>
-              <div class='gal'>
+            <div class='col-xl-3 my-col mt-4 mt-xl-0'>
+              <a href='#landing' style="text-decoration : none; color : #000000;"><div class='gal'>
                 <div class='row'>
                   <div class='col-xl-12 col-6 text-center p-4'>
                     <h1>Text Adventure</h1>
@@ -67,10 +90,10 @@
                     <img class='img-fluid gal-img' src='src\images\terminal.svg' />
                   </div>
                 </div>
-              </div>
+              </div></a>
             </div>
             <div class='col-xl-3 my-col mt-4 mt-xl-0'>
-              <div href='#landing' class='gal'>
+              <a href='#landing' style="text-decoration : none; color : #000000;"><div class='gal'>
                 <div class='row'>
                   <div class='col-xl-12 col-6 text-center p-4'>
                     <h1>Text Adventure</h1>
@@ -82,7 +105,7 @@
                     <img class='img-fluid gal-img' src='src\images\terminal.svg' />
                   </div>
                 </div>
-              </div>
+              </div></a>
             </div>
           </div>
       </div>

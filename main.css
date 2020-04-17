@@ -81,7 +81,7 @@ body, html {
 .mw100 {
   max-width: 100%;
 }
-.landing {
+#landing {
   background-color: #b19cd9;
 }
 .gal-img{
@@ -94,5 +94,97 @@ body, html {
   width: 80%;
   height:auto;
 }
+
+}
+
+::-webkit-scrollbar {
+  width: 23px;
+  height: 23px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1aaf7;
+  border: 20px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #e7ceff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23b54be7' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23a091ae' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23af51e2' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%239d57c8' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23ac40e5' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23957ca4' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23a87cc6' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%2390789b' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23a07abf' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%238d7092' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23928aac' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23905c98' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  display: inline;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  z-index:20;
+
+}
+.hamburger {
+  display: block;
+  width: 80%;
+  height: 4vh
+  border-bottom: solid #000000 1px;
+}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    z-index:20;
+  }
 
 }
