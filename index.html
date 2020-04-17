@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="main.css"/>
     <script src="main.js"></script>
     <script>
@@ -11,6 +12,7 @@
       if (document.getElementById("myNav").style.height == '0%'){document.getElementById("myNav").style.height = '100%';}
       else if (document.getElementById("myNav").style.height == '100%'){document.getElementById("myNav").style.height = '0%';}
     }
+
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Welcome to Michael's Portfolio</title>
@@ -20,19 +22,25 @@
     <div class='page'>
 
       <div id="myNav" class="overlay" style="height:0%">
-
-        <div class="overlay-content">
-          <a href="#">About Me</a>
-          <a href="#">Resume</a>
-          <a href="#">Projects</a>
-          <a href="#">Experiences</a>
-          <a href="#">Contact Me</a>
+          <div class="overlay-content">
+            <a href="#">About Me</a>
+            <a href="#">Resume</a>
+            <a href="#">Projects</a>
+            <a href="#">Experiences</a>
+            <a href="#">Contact Me</a>
         </div>
 
+
       </div>
-      <span href="javascript:void(0)" class="closebtn" onclick="openNav()">
-        &times;
-      </span>
+
+      <div href="javascript:void(0)" class="closebtn" onclick="openNav()">
+        <div class="text-center" id="nav-icon3">
+          <span class='ham'></span>
+          <span class='ham'></span>
+          <span class='ham'></span>
+          <span class='ham'></span>
+        </div>
+      </div>
 
       <div class='container my-container scroll-child-start h100 mw100' id='landing'>
         <div class='row my-row h100'>

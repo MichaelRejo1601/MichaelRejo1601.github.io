@@ -129,8 +129,8 @@ body, html {
   z-index: 3; /* Sit on top */
   left: 0;
   top: 0;
-  background-color: #e7ceff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23b54be7' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23a091ae' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23af51e2' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%239d57c8' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23ac40e5' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23957ca4' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23a87cc6' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%2390789b' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23a07abf' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%238d7092' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23928aac' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23905c98' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-color: #e3c9ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23b59cd3' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23d7baec' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23b093d3' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23bf81e5' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23a284d4' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23af6bd9' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%239a7dd4' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23a264c4' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23926ad8' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%238d4eb5' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%238b55de' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%237b449d' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
   overflow-x: hidden; /* Disable horizontal scroll */
@@ -142,9 +142,16 @@ body, html {
 .overlay-content {
   position: relative;
   top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
+  width:100%;
+
   text-align: center; /* Centered text/links */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+@media (min-width: 1200px){
+
+.overlay-content{width: 60%;}
+
 }
 
 /* The navigation links inside the overlay */
@@ -164,18 +171,89 @@ body, html {
 
 /* Position the close button (top right corner) */
 .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
+
+  position: relative;
+  top: 100px;
+  left: 20px;
   font-size: 60px;
   z-index:20;
-
+  background-color:white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 1px #e6ccff;
 }
-.hamburger {
+#nav-icon3{
+  position:relative;
+  top: 13px;
+  left: 14.5px;
+  height: 60px;
+  width: 45px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+#nav-icon3 span{
   display: block;
-  width: 80%;
-  height: 4vh
-  border-bottom: solid #000000 1px;
+  position: absolute;
+  height: 7px;
+  width: 90%;
+  background: #b19cd9;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 36px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
