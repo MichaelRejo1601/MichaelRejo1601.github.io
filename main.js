@@ -16,7 +16,7 @@ let mouse = {
 
 let goingRight = true;
 const colors = ["#00bdff", "#4d39ce", "#088eff"];
-// Event Listener
+
 /*addEventListener("mousemove", event => {
 	mouse.x = event.x;
 	mouse.y = event.y;
@@ -95,16 +95,3 @@ init();
 animate();
 fill();
 }
-$(document).ready(function(){
-  $(".down-arrow").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
-});
