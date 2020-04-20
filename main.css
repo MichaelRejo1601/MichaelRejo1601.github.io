@@ -131,6 +131,21 @@ html, body{
   color:white;
   padding:50px
 }
+.profile{
+  border-radius: 50%;
+  height:30vh;
+  box-shadow: 0px 5px 5px 5px grey;
+}
+.about-text{
+  font-family: Verdana, sans-serif;
+  font-size: 1.25rem;
+  color: grey;
+  height:100%
+}
+.abt-row{
+  min-height:90vh;
+  text-align:center;
+}
 @media (max-width: 450px){
   .landing-text{
 
