@@ -175,10 +175,11 @@ html, body{
   color:grey;
   text-align:right;
   font-family:Verdana;
+  font-size:2rem;
 }
 .volunteer{
+  padding-top:50px;
   background-color: grey;
-  clip-path: polygon(0 10%, 0 100%, 100% 90%, 100% 0%);
   height:auto;
   display:block;
   overflow:auto;
@@ -188,6 +189,8 @@ html, body{
   padding-right: 10%;
   color:white;
   font-family:Verdana;
+  clip-path: polygon(0 10%, 0 100%, 100% 90%, 100% 0%);
+  font-size:2rem;
 }
 .field{
   background-color: white;
@@ -201,10 +204,11 @@ html, body{
   color:grey;
   text-align:right;
   font-family:Verdana;
+  font-size:2rem;
 }
 .mentor{
   background-color: grey;
-  clip-path: polygon(0 10%, 0 100%, 100% 90%, 100% 0%);
+  clip-path: polygon(0 10%, 0 100%, 100% 100%, 100% 0%);
   height:auto;
   display:block;
   overflow:auto;
@@ -214,6 +218,7 @@ html, body{
   padding-right: 10%;
   color:white;
   font-family:Verdana;
+  font-size:2rem;
 }
 .profile{
   border-radius: 50%;
@@ -245,5 +250,21 @@ html, body{
   }
   .text{
     height:30vh;
+  }
+  .intro{
+    text-align: left;
+    clip-path: none;
+  }
+  .guest{
+    text-align: left;
+  }
+  .volunteering{
+    clip-path: none;
+  }
+  .field{
+    text-align: left;
+  }
+  .mentor{
+    clip-path: none;
   }
 }
