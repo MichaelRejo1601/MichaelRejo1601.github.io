@@ -121,6 +121,16 @@ html, body{
   background-color:#4d39ce;
   width:70%
 }
+.intrested{
+  background-color: grey;
+  clip-path: polygon(0 0%, 0 100%, 100% 100%, 100% 0%);
+  height:auto;
+  display:block;
+  overflow:auto;
+  width:100%;
+  color:white;
+  padding:50px
+}
 @media (max-width: 450px){
   .landing-text{
 
