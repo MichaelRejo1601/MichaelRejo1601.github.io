@@ -126,6 +126,7 @@ html, body{
 }
 #img8{
   background-image:url('src/solarhydrocar.PNG');
+  background-position:10%;
 }
 .item{
   height: auto;
@@ -147,6 +148,7 @@ html, body{
   width:100%;
   color:white;
   padding:50px;
+  text-align: center;
 }
 .intro{
   margin-top:50px;
