@@ -110,6 +110,23 @@ html, body{
 #img3{
   background-image:url('src/chatbot.png');
 }
+#img4{
+  background-image:url('src/crossy.PNG');
+}
+#img5{
+  background-image:url('src/AppInventor.png');
+  background-position: 20% 70%;
+}
+#img6{
+  background-image:url('src/TAPic2.PNG');
+}
+#img7{
+  background-image:url('src/rocket.JPG');
+  background-position: 10%;
+}
+#img8{
+  background-image:url('src/solarhydrocar.PNG');
+}
 .item{
   height: auto;
   overflow:auto;
