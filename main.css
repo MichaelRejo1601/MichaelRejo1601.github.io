@@ -133,6 +133,10 @@ html, body{
   background-image:url('src/decircuit.png');
   background-position:10%;
 }
+#img10{
+  background-image:url('src/cmod.jpg');
+  background-position:10%;
+}
 .item{
   height: auto;
   overflow:auto;
